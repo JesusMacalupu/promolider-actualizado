@@ -192,10 +192,10 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-color-purple py-5 px-4"> <!-- px-4 en lugar de px-5 (reducción de ~1.5rem a ~1rem) -->
-        <div class="row align-items-center gx-4"> <!-- gx-4 para menos espacio entre columnas -->
+    <div class="container-fluid bg-color-purple py-5 px-4">
+        <div class="row align-items-center gx-4"> 
             <!-- Columna Izquierda (Texto) -->
-            <div class="col-12 col-lg-4 ps-4"> <!-- ps-4 en lugar de ps-5 -->
+            <div class="col-12 col-lg-4 ps-4"> 
                 <div class="w-100">
                     <h1 class="pregunta-destacada mb-4 text-start">¿Cansado de crear cursos que nadie compra?</h1>
                     <div class="text-light mb-4">
@@ -214,14 +214,14 @@
             </div>
             
             <!-- Columna Centro (Imagen) -->
-            <div class="col-12 col-lg-4 text-center px-4"> <!-- px-4 en lugar de px-5 -->
+            <div class="col-12 col-lg-4 text-center px-4">
                 <div class="mx-auto" style="max-width: 400px;">
                     <img src="img/productora.webp" class="img-fluid object-fit-cover w-100" alt="Imagen destacada" style="height: 500px;">
                 </div>
             </div>
             
             <!-- Columna Derecha (Lista) -->
-            <div class="col-12 col-lg-4 pe-4"> <!-- pe-4 en lugar de pe-5 -->
+            <div class="col-12 col-lg-4 pe-4">
                 <div class="bg-gray px-4 py-3 text-light w-100">
                     <p class="fw-bolder mb-4 text-center">Beneficios exclusivos para productores:</p>
                     <ul class="ps-3">
@@ -275,17 +275,25 @@
     </div>
 
     <div class="container-fluid app-phone position-relative px-0 mx-0 bg-dark py-5">
-        <div class="row mx-0 px-0">
-            <div class="col-12 col-lg-4 mx-0 px-0 d-flex justify-content-center align-items-center flex-column">
-                <h3 class="color-green mx-5 text-center text-lg-start fw-lighter text-responsive">
-                    Una sola plataforma <br> Dos roles <br> Un mismo objetivo:
-                </h3>
-                <h1 class="mx-5 text-center text-lg-start fw-bold text-light text-responsive fs-2">
+        <!-- Primera fila - Título principal CENTRADO -->
+        <div class="row mx-0 px-0 justify-content-center">
+            <div class="col-12 mx-0 px-0 text-center">
+                <h1 class="fw-bold text-light text-responsive fs-2">
                     Expandir el conocimiento y generar ingresos residuales con <br>
                     <span class="animacion-leadboost fw-bolder">
                         Lead<span class="color-green">Boost</span>
                     </span>
                 </h1>
+            </div>
+        </div>
+    
+        <!-- Segunda fila - 3 columnas con márgenes laterales -->
+        <div class="row mx-0 px-0">
+            <!-- Columna izquierda -->
+            <div class="col-12 col-lg-4 mx-0 px-0 d-flex justify-content-center align-items-center flex-column">
+                <h3 class="text-white text-center text-lg-start fw-lighter text-responsive tresenuno">
+                    Una sola plataforma <br> Dos roles <br> Un mismo objetivo:
+                </h3>
                 <hr class="line-app w-100" />
                 <h4 class="color-green lh-base text-center text-lg-start fs-6 w-75">
                     Leadboost es una app donde los productores
@@ -296,9 +304,13 @@
                     ventas y comisiones en piloto automático.
                 </h4>
             </div>
+            
+            <!-- Columna central (sin márgenes) -->
             <div class="col-12 col-lg-4 mx-0 px-0 d-flex">
                 <img src="img/app.webp" class="w-100 image-app" alt="Aplicación LeadBoost">
             </div>
+            
+            <!-- Columna derecha -->
             <div class="col-12 col-lg-4 mx-0 px-0">
                 <div class="d-flex justify-content-center align-items-stretch flex-column px-3 w-100">
                     <div class="border border-2 border-light px-3 py-3 text-light rounded-5 my-3">
@@ -320,13 +332,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="container-fluid text-light text-center">
-                    <h6 class="fs-7 fw-bolder mt-2">Olvídate de hacer listas, perseguir contactos o quedarte sin prospectos.</h6>
-                    <h6 class="fs-8 mt-2">Con LeadBoost, todo está diseñado para que escalas sin límites.</h6>
-                    <a class="btn-green fw-bold fs-5 fs-md-4 py-3 px-4 px-md-5 mb-5 mb-md-0 mx-md-3" id="btnProductor" style="margin-top: 0.7cm !important;">
-                        Descargar aquí la App
-                    </a>
-                </div>
+            </div>
+        </div>
+    
+        <!-- Tercera fila - Texto y botón CENTRADOS -->
+        <br><br>
+        <div class="row mx-0 px-0 justify-content-center">
+            <div class="col-12 col-lg-8 text-center text-light">
+                <h6 class="fs-7 fw-bolder mt-2">Olvídate de hacer listas, perseguir contactos o quedarte sin prospectos.</h6>
+                <h6 class="fs-8 mt-2">Con LeadBoost, todo está diseñado para que escalas sin límites.</h6>
+                <a class="btn-green fw-bold fs-5 fs-md-4 py-3 px-4 px-md-5 mb-5 mb-md-0 mx-md-3 mt-3" id="btnProductor">
+                    Descargar aquí la App
+                </a>
             </div>
         </div>
     </div>
